@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denzel Marani - Photography Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: #667eea;
+            margin: 20px auto;
+        }
+
+        .intro-section {
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .intro-section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .intro-section p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        .gallery-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .gallery-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            aspect-ratio: 1;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #764ba2;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .intro-section h2 {
+                font-size: 1.4em;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Denzel Marani</h1>
+            <p class="subtitle">Photography & Visual Arts</p>
+            <div class="divider"></div>
+        </header>
+
+        <section class="intro-section">
+            <h2>Welcome</h2>
+            <p>
+                Hi! I'm <span class="highlight">Denzel Marani</span>, a passionate photographer dedicated to capturing moments that tell stories. 
+                With a keen eye for detail and a love for visual storytelling, I specialize in creating compelling imagery across various genres.
+            </p>
+        </section>
+
+        <section class="intro-section">
+            <h2>About My Work</h2>
+            <p>
+                My portfolio showcases a diverse range of photography projects. From stunning landscapes to intimate portraits, 
+                each image is crafted with intention and care. I believe in the power of photography to <span class="highlight">inspire, 
+                connect, and preserve</span> meaningful moments.
+            </p>
+        </section>
+
+        <section class="intro-section">
+            <h2>Portfolio Categories</h2>
+            <div class="gallery-preview">
+                <div class="gallery-item">Portraits</div>
+                <div class="gallery-item">Landscapes</div>
+                <div class="gallery-item">Events</div>
+                <div class="gallery-item">Lifestyle</div>
+                <div class="gallery-item">Travel</div>
+                <div class="gallery-item">Nature</div>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <h2>Let's Connect</h2>
+            <p>
+                Interested in commissioning a photo session or learning more about my work? 
+                I'd love to hear from you!
+            </p>
+            <button class="cta-button">View Full Portfolio</button>
+            <button class="cta-button">Get in Touch</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Denzel Marani Photography. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+    
