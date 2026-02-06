@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,7 +13,9 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Home' });
+    const epsteinlistPath = path.join(__dirname, 'public', 'epsteinlist.txt');
+    const epsteinlistContent = fs.readFileSync(epsteinlistPath, 'utf-8').trim();
+    res.render('index', { title: 'Home', epsteinlistContent });
 });
 
 app.get('/:page', (req, res) => {
